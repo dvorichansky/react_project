@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,24 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+img{
+  max-width: 100%;
+}
+
+.app-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  "area-header area-header"
+  "area-nav area-content";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+}
+
+.app-wrapper-content{
+  grid-area: area-content;
 }
